@@ -55,6 +55,6 @@ function on_player_death(event)
         return
     end
 
-    engine.execute_client_cmd("say " .. phrases[math.random(1, 37, #phrases)])
+    engine.execute_client_cmd("say " .. phrases[math.random(1, #phrases)])
 end
 callbacks.register("player_death", on_player_death)
